@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors
+				'movie-purple': {
+					'100': '#D6BCFA',
+					'300': '#9b87f5',
+					'500': '#7E69AB',
+					'700': '#6E59A5',
+					'900': '#1A1F2C'
+				},
+				'movie-gray': {
+					'100': '#eee',
+					'300': '#C8C8C9',
+					'500': '#8E9196',
+					'700': '#8A898C',
+					'900': '#1A1F2C'
+				},
+				'movie-accent': {
+					'blue': '#1EAEDB',
+					'sky': '#33C3F0',
+					'red': '#ea384c'
 				}
 			},
 			borderRadius: {
@@ -84,11 +105,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'pulse-subtle': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-in-out',
+				'pulse-subtle': 'pulse-subtle 3s infinite ease-in-out'
+			},
+			fontFamily: {
+				'sans': ['Inter', 'sans-serif'],
+				'display': ['Montserrat', 'sans-serif'],
 			}
 		}
 	},
